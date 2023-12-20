@@ -120,3 +120,16 @@ h4 {
 }
 
 /*works*/
+.banner img {
+  max-width: 20%;
+}
+
+.contents_text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tool {
+  font-size: ;
+  color: ;
+}
