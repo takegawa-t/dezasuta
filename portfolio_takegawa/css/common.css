@@ -27,3 +27,79 @@ li {
     "ＭＳ 明朝", serif;
   font-feature-settings: "palt";
 }
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色をけす*/
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header_logo {
+    display: block;
+    padding: 10px;
+  }
+}
+
+/* 共通 */
+body {
+  background: #fafaf5;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+}
+
+/* ヘッダー */
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.header_logo {
+  font-family: "Yeseva One", cursive;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.pc_nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pc_nav ul li {
+  display: flex;
+  min-width: 105px;
+  font-size: 16px;
+  color: #392100;
+  margin-top: 36px;
+  list-style: none;
+  margin-left: 36px;
+}
+
+.heading {
+  max-width: 1100px;
+  margin: 130px auto;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
