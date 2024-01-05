@@ -11,6 +11,7 @@ head,
 h1,
 h2,
 h3,
+h4,
 p,
 dl,
 dt,
@@ -45,13 +46,6 @@ img {
   border: none;
 }
 
-@media screen and (max-width: 767px) {
-  .header_logo {
-    display: block;
-    padding: 10px;
-  }
-}
-
 /* 共通 */
 body {
   background: #fafaf5;
@@ -68,6 +62,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 25px;
   box-sizing: border-box;
   z-index: 99;
   background: rgba(255, 255, 255, 0.6);
@@ -76,7 +71,7 @@ body {
 .header_logo {
   font-family: "Yeseva One", cursive;
   font-size: 24px;
-  margin-left: 20px;
+  font-weight: 400;
 }
 
 .pc_nav ul {
@@ -85,11 +80,8 @@ body {
 }
 
 .pc_nav ul li {
-  display: flex;
-  min-width: 105px;
   font-size: 16px;
   color: #392100;
-  margin-top: 36px;
   list-style: none;
   margin-left: 36px;
 }
@@ -102,4 +94,94 @@ body {
 .inner {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 30px;
+}
+
+.footer {
+  background-color: #250d00;
+  color: #fff;
+}
+
+.footer_inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 55px 30px 25px;
+}
+
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  margin-bottom: 48px;
+  font-family: "Yeseva One", cursive;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer_text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer_nav ul {
+  display: flex;
+}
+
+.footer_nav ul li + li {
+  margin-left: 40px;
+}
+
+.footer_nav ul li a {
+  color: #fff;
+  font-size: 600;
+}
+
+.footer_copy {
+  margin-top: 160px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 280px;
+  padding: 20px 0;
+  margin: 150px 0 180px auto;
+  border: 1px solid #392100;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header_wrap {
+    padding: 26px 20px;
+  }
+
+  .header_logo {
+    font-size: 20px;
+  }
+  .pc_nav {
+    display: none;
+  }
+  .footer_nav ul {
+    display: block;
+  }
+  .footer_nav ul li + li {
+    margin-top: 26px;
+    margin-left: 0;
+  }
+  .footer_logo {
+    margin-bottom: 26px;
+    font-size: 10px;
+  }
+  .footer_text {
+    font-size: 14px;
+  }
+  .btn {
+    width: 80%;
+    margin: 40px auto;
+  }
 }

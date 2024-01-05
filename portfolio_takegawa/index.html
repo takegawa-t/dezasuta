@@ -29,10 +29,16 @@
 
     <main>
         <div class="fv">
-            <div class="fv_img"><img src="images/top.png" alt="ファーストビュー"></div>
-
             <h1 class="fv_text">Tomomi Takegawa<br>
                 Portfolio site</h1>
+            <div class="fv_img">
+                <picture>
+                    <source srcset="" media="(max-width: 767px)">
+                    <img src="images/top.png" alt="ファーストビュー">
+                </picture>
+            </div>
+
+
         </div>
 
 
@@ -55,10 +61,16 @@
             </div>
         </section>
 
-        <section class="skill_img"><img src="images/skill.png" alt="Skill画像">
+        <section class="skill">
+            <div class="skill_img">
+                <picture>
+                    <source srcset="" media="(max-width: 767px)">
+                    <img src="images/skill.png" alt="Skill画像">
+                </picture>
+            </div>
             <p class="skill_text">Skill</p>
-            <div class="boxwrap">
-                <div class="wrap_pattern1">
+            <div class="skill_inner">
+                <div class="skill_content">
                     <h4>デザイン</h4>
                     <p class="skill_design">
                         デザインの4原則に沿った、<br>
@@ -68,7 +80,7 @@
                     </p>
                 </div>
 
-                <div class="wrap_pattern2">
+                <div class="skill_content">
                     <h4>コーディング</h4>
                     <p class="skill_coding">
                         シンプルで見やすいコードを書くよう意識<br>
@@ -84,51 +96,79 @@
 
         <section class="works">
             <h2 class="heading">Works</h2>
-            <div class="banner">
-                <img src="images/kadai1_smartphone.png" alt="架空のスマートフォン販促バナー">
-                <p class="contents_text">架空のスマートフォン販促バナー</p>
-                <p class="tool">Illustrator</p>
+            <div class="inner">
 
-                <img src="images/kadai2_TRRRRIP.jpg" alt="架空の旅行アプリバナー">
-                <p class="contents_text">架空の旅行アプリバナー</p>
-                <p class="tool">Illustrator / Photoshop</p>
+                <ul class="works_list">
+                    <li><a href="">
+                            <div class="works_img"><img src="images/kadai1_smartphone.png" alt="架空のスマートフォン販促バナー"></div>
+                            <p class="contents_text">架空のスマートフォン販促バナー</p>
+                            <p class="tool">Illustrator</p>
+                        </a></li>
 
-                <img src="images/kadai3_rich.jpg" alt="架空のハンバーガー広告バナーrich">
-                <p class="contents_text">架空のハンバーガー広告バナー①</p>
-                <p class="tool">Illustrator / Photoshop</p>
+                    <li><a href="">
+                            <div class="works_img"><img src="images/kadai2_TRRRRIP.jpg" alt="架空の旅行アプリバナー"></div>
+                            <p class="contents_text">架空の旅行アプリバナー</p>
+                            <p class="tool">Illustrator / Photoshop</p>
 
-                <img src="images/kadai3_pop.jpg" alt="架空のハンバーガー広告バナーpop">
-                <p class="contents_text">架空のハンバーガー広告バナー②</p>
-                <p class="tool">Illustrator / Photoshop</p>
+                        </a></li>
 
-                <img src="images/mock-up_works4.jpg" alt="架空のコワーキングスペースWebサイト">
-                <p class="contents_text">架空のコワーキングスペースWebサイト</p>
-                <p class="tool">Illustrator</p>
+                    <li><a href="">
+                            <div class="works_img"><img src="images/kadai3_rich.jpg" alt="架空のハンバーガー広告バナーrich"></div>
+                            <p class="contents_text">架空のハンバーガー広告バナー①</p>
+                            <p class="tool">Illustrator / Photoshop</p>
 
-                <img src="images/mock-up_works5.jpg" alt="架空の美容院サイト">
-                <p class="contents_text">架空の美容院Wedサイト</p>
-                <p class="tool">Illustrator</p>
+                        </a></li>
 
-                <a class="button" href="works.html">More</a>
+                    <li><a href="">
+                            <div class="works_img"><img src="images/kadai3_pop.jpg" alt="架空のハンバーガー広告バナーpop"></div>
+                            <p class="contents_text">架空のハンバーガー広告バナー②</p>
+                            <p class="tool">Illustrator / Photoshop</p>
+
+                        </a></li>
+
+
+                    <li><a href="">
+                            <div class="works_img"><img src="images/mock-up_works4.jpg" alt="架空のコワーキングスペースWebサイト"></div>
+                            <p class="contents_text">架空のコワーキングスペースWebサイト</p>
+                            <p class="tool">Illustrator</p>
+
+                        </a></li>
+
+                    <li><a href="">
+                            <div class="works_img"><img src="images/mock-up_works5.jpg" alt="架空の美容院サイト"></div>
+                            <p class="contents_text">架空の美容院Wedサイト</p>
+                            <p class="tool">Illustrator</p>
+
+                        </a></li>
+
+                </ul>
+                <a class="btn" href="works.html">More</a>
             </div>
+
+
+
         </section>
+
     </main>
 
-    <footer>
-        <div class="footer_wrap">
-            <div class="header_logo">Tomomi Takegawa</div>
-            <div>Portfolio site</div>
-            <p><small>&copy; 2023 Tomomi Takegawa</small></p>
+    <footer class="footer">
+        <div class="footer_inner">
+
+            <div class="footer_flex">
+                <div class="footer_credit">
+                    <div class="footer_logo">Tomomi Takegawa</div>
+                    <div class="footer_text">Portfolio site</div>
+                </div>
+                <nav class="footer_nav">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="works.html">Works</a></li>
+                        <li><a href="photograph.html">Photograph</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="footer_copy">&copy; 2023 Tomomi Takegawa</p>
         </div>
-
-        <nav class="pc_nav">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="photograph.html">Photograph</a></li>
-            </ul>
-        </nav>
-
     </footer>
 
 

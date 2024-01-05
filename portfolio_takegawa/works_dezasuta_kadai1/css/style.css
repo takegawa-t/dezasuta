@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/*works1*/
+/*works_dezasuta_kadai1*/
+
+/*main*/
+.section {
+  position: relative;
+}
+
+h2 {
+  font-size: 55px;
+  font-weight: 800;
+  position: relative;
+  max-width: 1300px;
+  margin: 40px auto 0;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 400px;
+  display: block;
+  width: 50vw;
+  transform: translateX(-100%);
+  height: 1px;
+  background: #392100;
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    text-align: center;
+  }
+  h2::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/*h2タイトル*/
+
+.heading {
+  margin-left: 40px;
+}
+
+/*works*/
+
+.works_img {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1/1;
+  padding: 20px;
+  background: #fff;
+}
+
+.contents_text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tool {
+  margin: 10px 100px;
+  text-align: center;
+  color: #928680;
+}
+
+.works_img {
+  max-width: 450px;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .works_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.Works_read {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.Works_text {
+  font-size: 16px;
+  margin: 20px 100px;
+  line-height: 60px;
+  position: relative;
+  height: 1px;
+  border-bottom: 1px solid #928680;
+  display: inline-block;
+  padding-bottom: 48px;
+}
+
+/*works_dezasuta_kadai1-copy.htmlの試し
+.read {
+  margin: 0 0 200px 0;
+}
+
+.read {
+  width: 96%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  display: block;
+}
+
+.works_kadai1 {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+dt {
+  display: block;
+}
+
+dd {
+  display: block;
+  margin-inline-start: 40px;
+}
+works_dezasuta_kadai1-copy.htmlの試し*/

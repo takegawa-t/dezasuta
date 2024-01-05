@@ -5,25 +5,6 @@
   position: relative;
 }
 
-.fv {
-  position: relative;
-}
-
-.fv_img img {
-  width: 100%;
-}
-
-.fv_text {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: clamp(30px, 6vw, 60px);
-  font-weight: 800;
-  margin-right: 15%;
-  margin-left: 12%;
-  line-height: 80px;
-}
-
 h2 {
   font-size: 55px;
   font-weight: 800;
@@ -43,19 +24,83 @@ h2::before {
   background: #392100;
 }
 
+@media screen and (max-width: 767px) {
+  h2 {
+    text-align: center;
+  }
+  h2::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/*FV*/
+.fv {
+  position: relative;
+}
+
+.fv_img {
+  width: 100%;
+}
+
+.fv_text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(30px, 6vw, 60px);
+  font-weight: 800;
+  margin-right: 15%;
+  margin-left: 12%;
+  line-height: 1.4;
+}
+
 .heading {
   margin-left: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .fv_text {
+    position: relative;
+    transform: translateY(0);
+    margin-top: 80px;
+  }
+}
+
 /*Skill*/
+.skill {
+  position: relative;
+}
+
+.skill_img {
+  width: 100%;
+}
+
 .skill_text {
   font-size: 55px;
   font-weight: 800;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 20%;
-  right: 80%;
+  left: 50%;
   color: #fff;
+}
+
+.skill_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill_content {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 40px;
 }
 
 .wrap_pattern1 {
@@ -84,6 +129,7 @@ h3 {
   margin-bottom: 17%;
 }
 
+/*ここから
 .wrap_pattern1 {
   margin: 50px auto;
   width: 300px;
@@ -92,35 +138,57 @@ h3 {
   background-color: #fff;
   background: rgba(255, 255, 255, 0.4);
 }
-
 .wrap_pattern2 {
   margin: 50px auto;
   width: 300px;
   padding: 60px 30px;
   border: 0px solid #ddd;
   background-color: #fff;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
 }
+ここまで消す？*/
 
 h4 {
   color: #fff;
   font-size: 20px;
+  margin: 5%;
 }
 
 .skill_design {
   color: #fff;
+  line-height: 30px;
 }
 
 .skill_coding {
   color: #fff;
+  line-height: 30px;
 }
 
-.skill_img {
-  position: relative;
+@media screen and (max-width: 767px) {
+  .skill_inner {
+    display: block;
+  }
+  .skill_content {
+    margin: 0 auto;
+  }
 }
 
 /*works*/
-.banner img {
+.works_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.works_img {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1/1;
+  padding: 20px;
+  background: #fff;
+}
+
+.item img {
   max-width: 20%;
 }
 
@@ -130,6 +198,29 @@ h4 {
 }
 
 .tool {
-  font-size: ;
-  color: ;
+  margin-top: 10px;
+  text-align: center;
+  color: #928680;
+}
+
+@media screen and (max-width: 767px) {
+  .works_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 10px;
+  width: 20%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.item:not(:nth-child(3n + 3)) {
+  margin-left: 10%;
 }
